@@ -1,0 +1,96 @@
+"Games"
+{
+	"tf"
+	{
+		"Signatures"
+		{
+			"CMissionPopulator::UpdateMission"
+			{
+				"linux"		"@_ZN17CMissionPopulator13UpdateMissionEN6CTFBot11MissionTypeE"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x5C\x8B\x15\x2A\x2A\x2A\x2A"
+			}
+			"CWaveSpawnPopulator::Update"
+			{
+				"linux"		"@_ZN19CWaveSpawnPopulator6UpdateEv"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x40\x53\x56\x57\x33\xDB"
+			}
+			"CPopulationManager::AllocateBots"
+			{
+				"linux"		"@_ZN18CPopulationManager12AllocateBotsEv"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x14\x53\x8B\xD9\x80\xBB\xAD\x05\x00\x00\x00"
+			}
+			"CTFBotSpawner::Spawn"
+			{
+				"linux"		"@_ZN13CTFBotSpawner5SpawnERK6VectorP10CUtlVectorI7CHandleI11CBaseEntityE10CUtlMemoryIS6_iEE"
+				"windows"	"\x55\x8B\xEC\x81\xEC\x70\x01\x00\x00"
+			}
+		}
+		"MemPatches"
+		{
+			"CMissionPopulator::UpdateMission::MVM_INVADERS_TEAM_SIZE"
+			{
+				"signature" "CMissionPopulator::UpdateMission"
+				"linux"
+				{
+					"offset"	"2E5h"
+					"verify"	"\x83\xF8\x16"
+					"patch"		"\x83\xF8\x5A"
+				}
+				"windows"
+				{
+					"offset"	"1D2h"
+					"verify"	"\x83\xF9\x16"
+					"patch"		"\x83\xF9\x5A"
+				}
+			}
+			"CWaveSpawnPopulator::Update::MVM_INVADERS_TEAM_SIZE"
+			{
+				"signature" "CWaveSpawnPopulator::Update"
+				"linux"
+				{
+					"offset"	"C63h"
+					"verify"	"\x83\xF8\x16"
+					"patch"		"\x83\xF8\x5A"
+				}
+				"windows"
+				{
+					"offset"	"37Ch"
+					"verify"	"\x83\xF8\x16"
+					"patch"		"\x83\xF8\x5A"
+				}
+			}
+			"CPopulationManager::AllocateBots::MVM_INVADERS_TEAM_SIZE"
+			{
+				"signature" "CPopulationManager::AllocateBots"
+				"linux"
+				{
+					"offset"	"B6h"
+					"verify"	"\x83\xFB\x16"
+					"patch"		"\x83\xF8\x5A"
+				}
+				"windows"
+				{
+					"offset"	"5Eh"
+					"verify"	"\x83\xFF\x16"
+					"patch"		"\x83\xFF\x5A"
+				}
+			}
+			"CTFBotSpawner::Spawn::MVM_INVADERS_TEAM_SIZE"
+			{
+				"signature" "CTFBotSpawner::Spawn"
+				"linux"
+				{
+					"offset"	"364h"
+					"verify"	"\x83\xFB\x15"
+					"patch"		"\x83\xFB\x59"
+				}
+				"windows"
+				{
+					"offset"	"2F5h"
+					"verify"	"\x83\xF9\x16"
+					"patch"		"\x83\xF9\x5A"
+				}
+			}
+		}
+	}
+}
