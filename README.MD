@@ -1,6 +1,6 @@
 # Unlimited MvM Bots
 
-This is a simple plugin that allows spawning up to 90 bots in MvM. Comes with the convar `sm_mvm_remove_bot_cosmetics` which you will most definitely need.
+This is a simple plugin that allows spawning up to 90 bots in MvM. Comes with the convar `sm_mvm_remove_bot_cosmetics`, which you will most definitely need.
 
 **You will need a mission specifically made with increased bot count in mind. Most missions never spawn more than 22 bots at once.**
 
@@ -14,3 +14,5 @@ Keep in mind that increasing the bot count beyond the defender count will make b
 * [nosoop/SMExt-SourceScramble](https://github.com/nosoop/SMExt-SourceScramble)
 * [nosoop/SM-TFEconData](https://github.com/nosoop/SM-TFEconData)
 * [nosoop/SM-TFUtils](https://github.com/nosoop/SM-TFUtils)
+
+![Screenshot](https://github.com/Mikusch/100mvm/assets/25514044/59b22832-0662-487e-8864-267dd2fed573)
