@@ -1,3 +1,5 @@
+# [THIS PLUGIN IS NOW UNSUPPORTED! USE MY SOURCE SCRAMBLE PATCHES INSTEAD.](https://github.com/Mikusch/SourceScramble-Patches)
+
 # Unlimited MvM Bots
 
 This is a simple plugin that allows spawning up to 90 bots in MvM. Comes with the convar `sm_mvm_remove_bot_cosmetics`, which you will most definitely need.
